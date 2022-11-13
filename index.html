@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <!--Heading-->
+  <header class="header">
+    <div class="container">
+      <div>
+        <h1 id="title"> Manager Effectiveness Survey</h1>
+        <p id="description">This survey assesses the employees’ beliefs about their manager’s effectiveness. This effectiveness is measured through the manager’s values, leadership qualities, communication behaviours, appreciation for diversity, and through capturing the employees’ overall satisfaction with their manager’s performance. </p>
+        <br>
+<p id="description">Thank you in advance for your candid feedback.</p>
+      </div>
+    </div>
+  </header>
+  <!--Survey questions-->
+  <section class="form">
+    <div class="container">
+      <form id="survey-form" action="">
+        
+  <!--Name-->
+        <div class="form-group">
+         <label id="name-label" for="name">Name:</label>
+          <input 
+          type="text" 
+          name="name" 
+          id="name"
+          class="form-control"
+          placeholder="Enter your Full Name"
+          required
+          />
+        </div>
+        
+ <!--Email-->       
+        <div class="form-group">
+         <label id="email-label" for="email">Email:</label>
+          <input 
+          type="email" 
+          name="email" 
+          id="email"
+          class="form-control"
+          placeholder="Enter your Employee Email"
+          required
+          />
+        </div>
+        
+<!--Mname-->        
+        <div class="form-group">
+         <label id="mName-label" for="mName">What is your Manager's full name?</label>
+          <input 
+          type="text" 
+          name="mName" 
+          id="mName"
+          class="form-control"
+          placeholder="Enter your Manager's Full Name"
+          required            
+          />
+        </div>
+        
+<!--Department- dropdown-->        
+        <div class="form-group">
+          <label id="department-label" for="department">Which department do you work in?</label>
+          <select 
+          id="dropdown" 
+          name="department" 
+          class="form-control" 
+          required>
+            <option disabled selected value>Select Current Department</option>
+            <option value="clinicalTeam">Clinical Team</option>
+            <option value="reportingAndIntelligenceTeam">Reporting and Intelligence Team</option>
+            <option value="issuesManagementTeam">Issues Management Team</option>
+            <option value="other">Other</option>
+          </select>
+            </div>
+ <!--Other Department- radio--> 
+            <div class="form-group">
+              <fieldset id="other-department-label">
+                <legend>Have you worked in any other Department(s) before?</legend>
+                <label class="custom-button" for="yes">
+                <input 
+                 id="yes"
+                 value="yes" 
+                 type="radio"
+                 name="yes-no"
+                 class="input-radio"
+                 checked      
+                 />Yes
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="no">
+                <input 
+                id="no" 
+                value="no" 
+                type="radio" 
+                class="input-radio"
+                name="yes-no"     
+                />No
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+ <!--Years at current job- radio--> 
+            <div class="form-group">
+              <fieldset id="years-job-label" >
+                <legend>How many years have you been working at your current job? </legend>
+                <label class="custom-button" for="less-than-1-Year">
+                <input 
+                 id="less-than-1-Year"
+                 value="less-than-1-Year" 
+                 type="radio"
+                 name="time-at-job"
+                 class="input-radio"
+                 checked     
+                 />Less than 1 Year
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="1-to-3-years">
+                <input 
+                id="1-to-3-years" 
+                value="1-to-3-years" 
+                type="radio" 
+                class="input-radio"
+                name="time-at-job"     
+                />1 to 3 years
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="4-to-6-years">
+                <input 
+                 id="4-to-6-years"
+                 value="4-to-6-years" 
+                 type="radio"
+                 name="time-at-job"
+                 class="input-radio"     
+                 />4 to 6 years
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="7-to-10-years">
+                <input 
+                id="7-to-10-years" 
+                value="7-to-10-years" 
+                type="radio" 
+                class="input-radio"
+                name="time-at-job"     
+                />7 to 10 years
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="more-than-10-years">
+                <input 
+                id="more-than-10-years" 
+                value="more-than-10-years" 
+                type="radio" 
+                class="input-radio"
+                name="time-at-job"     
+                />More than 10 years
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+ <!--Years with current Manager- radio--> 
+            <div class="form-group">
+              <fieldset id="years-manager-label" >
+                <legend>How long have you worked for your current manager? </legend>
+                <label class="custom-button" for="Less-than-1-Year">
+                <input 
+                 id="Less-than-1-Year"
+                 value="Less-than-1-Year" 
+                 type="radio"
+                 name="time-with-manager"
+                 class="input-radio"
+                 checked     
+                 />Less than 1 Year
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="1-to-3-years">
+                <input 
+                id="1-to-3-years" 
+                value="1-to-3-years" 
+                type="radio" 
+                class="input-radio"
+                name="time-with-manager"     
+                />1 to 3 years
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="4-to-6-years">
+                <input 
+                 id="4-to-6-years"
+                 value="4-to-6-years" 
+                 type="radio"
+                 name="time-with-manager"
+                 class="input-radio"     
+                 />4 to 6 years
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="7-to-10-years">
+                <input 
+                id="7-to-10-years" 
+                value="7-to-10-years" 
+                type="radio" 
+                class="input-radio"
+                name="time-with-manager"     
+                />7 to 10 years
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="More-than-10-years">
+                <input 
+                id="More-than-10-years" 
+                value="More-than-10-years" 
+                type="radio" 
+                class="input-radio"
+                name="time-with-manager"     
+                />More than 10 years
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+<!--Manager Effectiveness- checkbox-->
+        <div class="form-group">
+          <fieldset id="effectiveness-label" >
+            <legend>Select all options that apply: </legend>
+            <legend>My Manager: </legend
+             >
+            <!--1-->
+            <label  class="custom-button"for="leads-the-team-effectively">
+            <input
+             id="leads-the-team-effectively"
+             value="leads-the-team-effectively"
+             class="input-checkbox"
+             type="checkbox"
+             name="leads-the-team-effectively"
+             checked
+             />Leads the team effectively
+            <span class="checkmark"></span>
+            </label
+             >
+            <!--2-->
+            <label class="custom-button" for="communicates-instructions-clearly">
+            <input
+             id="communicates-instructions-clearly"
+             value="communicates-instructions-clearly"
+             class="input-checkbox"
+             type="checkbox"
+             name="communicates-instructions-clearly"
+             />Communicates instructions clearly
+            <span class="checkmark"></span>
+            </label
+             >
+            <!--3-->
+            <label class="custom-button" for="skilfully-makes-decisions-that-improve-our-team’s-work-and-efficiency">
+            <input
+             id="skilfully-makes-decisions-that-improve-our-team’s-work-and-efficiency"
+             value="skilfully-makes-decisions-that-improve-our-team’s-work-and-efficiency"
+             class="input-checkbox"
+             type="checkbox"
+             name="skilfully-makes-decisions-that-improve-our-team’s-work-and-efficiency"
+             />Skilfully makes decisions that improve our team’s work and efficiency
+            <span class="checkmark"></span>
+            </label
+             >
+            <!--4-->
+            <label class="custom-button" for="Recognises-the-team's-successes-and-failures-and-works-to-promote-a-culture-of-trust">
+            <input
+             id="Recognises-the-team's-successes-and-failures-and-works-to-promote-a-culture-of-trust"
+             value="Recognises-the-team's-successes-and-failures-and-works-to-promote-a-culture-of-trust"
+             class="input-checkbox"
+             type="checkbox"
+             name="Recognises-the-team's-successes-and-failures-and-works-to-promote-a-culture-of-trust"
+             />Recognises the team's successes and failures and works to promote a culture of trust
+            <span class="checkmark"></span>
+            </label
+             >
+            <!--5-->
+            <label class="custom-button" for="Makes-me-feel-like-a-valued-member-of-the-team">
+            <input
+             id="Makes-me-feel-like-a-valued-member-of-the-team"
+             value="Makes-me-feel-like-a-valued-member-of-the-team"
+             class="input-checkbox"
+             type="checkbox"
+             name="Makes-me-feel-like-a-valued-member-of-the-team"
+             />Makes me feel like a valued member of the team
+            <span class="checkmark"></span>
+            </label
+             >
+            </fieldset>
+        </div>
+        
+<!--level of agreement with following statements-->
+        
+<!--Managers Goals- radio--> 
+            <div class="form-group" id="goals-label" >
+              <p>Please rate your level of agreement with the following statements:</p>
+              <fieldset>
+                <legend>In the past year, my manager's goals have been met or exceeded </legend>
+                <label class="custom-button" for="strongly-agree">
+                <input 
+                 id="strongly-agree"
+                 value="strongly-agree" 
+                 type="radio"
+                 name="managers-goals"
+                 class="input-radio"
+                 checked     
+                 />Strongly Agree
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="agree">
+                <input 
+                id="agree" 
+                value="agree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-goals"     
+                />Agree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="neutral">
+                <input 
+                 id="neutral"
+                 value="neutral" 
+                 type="radio"
+                 name="managers-goals"
+                 class="input-radio"     
+                 />Neutral
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="disagree">
+                <input 
+                id="disagree" 
+                value="disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-goals"     
+                />Disagree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="strongly-disagree">
+                <input 
+                id="strongly-disagree" 
+                value="strongly-disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-goals"     
+                />Strongly Disagree
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+        
+ <!--Managers Deadlines - radio--> 
+            <div class="form-group" id="deadlines-label" >
+              <fieldset>
+                <legend>My manager assigns reasonable work with fair deadlines </legend>
+                <label class="custom-button" for="strongly-agree">
+                <input 
+                 id="strongly-agree"
+                 value="strongly-agree" 
+                 type="radio"
+                 name="managers-deadlines"
+                 class="input-radio"
+                 checked     
+                 />Strongly Agree
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="agree">
+                <input 
+                id="agree" 
+                value="agree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-deadlines"     
+                />Agree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="neutral">
+                <input 
+                 id="neutral"
+                 value="neutral" 
+                 type="radio"
+                 name="managers-deadlines"
+                 class="input-radio"     
+                 />Neutral
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="disagree">
+                <input 
+                id="disagree" 
+                value="disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-deadlines"     
+                />Disagree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="strongly-disagree">
+                <input 
+                id="strongly-disagree" 
+                value="strongly-disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-deadlines"     
+                />Strongly Disagree
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+ <!--Managers standards - radio--> 
+            <div class="form-group" id="standards-label" >
+              <fieldset>
+                <legend>My manager maintains high standards for their conduct </legend>
+                <label class="custom-button" for="strongly-agree">
+                <input 
+                 id="strongly-agree"
+                 value="strongly-agree" 
+                 type="radio"
+                 name="managers-standards"
+                 class="input-radio"
+                 checked     
+                 />Strongly Agree
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="agree">
+                <input 
+                id="agree" 
+                value="agree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-standards"     
+                />Agree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="neutral">
+                <input 
+                 id="neutral"
+                 value="neutral" 
+                 type="radio"
+                 name="managers-standards"
+                 class="input-radio"     
+                 />Neutral
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="disagree">
+                <input 
+                id="disagree" 
+                value="disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-standards"     
+                />Disagree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="strongly-disagree">
+                <input 
+                id="strongly-disagree" 
+                value="strongly-disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-standards"     
+                />Strongly Disagree
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+ <!--Managers improvement - radio--> 
+            <div class="form-group" id="improvements-label" >
+              <fieldset>
+                <legend>My manager has worked to improve on issues in the last year</legend>
+                <label class="custom-button" for="strongly-agree">
+                <input 
+                 id="strongly-agree"
+                 value="strongly-agree" 
+                 type="radio"
+                 name="managers-improvements"
+                 class="input-radio"
+                 checked     
+                 />Strongly Agree
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="agree">
+                <input 
+                id="agree" 
+                value="agree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-improvements"     
+                />Agree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="neutral">
+                <input 
+                 id="neutral"
+                 value="neutral" 
+                 type="radio"
+                 name="managers-improvements"
+                 class="input-radio"     
+                 />Neutral
+                <span class="radio"></span>
+                </label
+                 >
+                <label class="custom-button" for="disagree">
+                <input 
+                id="disagree" 
+                value="disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-improvements"     
+                />Disagree
+                <span class="radio"></span>
+                </label
+                >
+                <label class="custom-button" for="strongly-disagree">
+                <input 
+                id="strongly-disagree" 
+                value="strongly-disagree" 
+                type="radio" 
+                class="input-radio"
+                name="managers-improvements"     
+                />Strongly Disagree
+                <span class="radio"></span>
+                </label
+                >
+               </feildset>
+        </div>
+ <!--Rating-->
+        <div class="form-group">
+         <label id="number-label" for="rating">Out of 10, what is your level of satisfaction with your manager?</label>
+          <input 
+          type="number" 
+          name="rating" 
+          id="number"
+          min="1"
+          max="10"
+          class="form-group"
+          placeholder="Enter satisfaction level"
+          required
+          />
+        </div>
+<!--Comments-->
+        <div class="form-group">
+         <label id="comments-label" for="comments">Do you have any additional comments or suggestions you would like to make about your manager? </label>
+          <textarea 
+          name="comments" 
+          id="comments"
+          class="input-textarea"
+          placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+<!--Submit Button-->        
+ <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+      </form>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
