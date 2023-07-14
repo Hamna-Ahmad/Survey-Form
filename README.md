@@ -2,10 +2,6 @@
 
 This is a Survey Form web application that allows users to provide feedback on their manager's effectiveness. The app is built using HTML and CSS and provides a user-friendly interface for collecting survey responses.
 
-## Preview
-
-![Survey Form Preview](preview.png)
-
 ## Getting Started
 
 To view and use the Survey Form application, follow these steps:
